@@ -36,3 +36,11 @@ function alterar_elemento(){
 function retorna_elemento(){
     document.getElementById("agradecimento").innerHTML = "a";
 }
+
+function yesnoCheck(that) {
+    if (that.value == "other") {
+        document.getElementById("ifYes").style.display = "block";
+    } else {
+        document.getElementById("ifYes").style.display = "none";
+    }
+}
