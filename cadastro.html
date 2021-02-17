@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -35,55 +35,55 @@
 
     <br><br>
 
+
     <div class="container-fluid">
         <form>
             <h2>Cadastro de produtos:</h2>
             <label for="sel1">Tipo de produto:</label>
-            <select class="form-control" id="tipo1" name="sellist1" onchange="yesnoCheck(this);">
+            <select class="form-control" ;>
                 <option value="">Selecione</option>
-                <option>SSD</option>
-                <option>RAM</option>
+                <option value="ssd">SSD</option>
+                <option value="ram">RAM</option>
                 <option>Smartwatch</option>
-                <option value="other">Outros</option>
+                <option value="outro">Outros</option>
             </select>
             <br>
         </form>
 
-        <div id="ifYes" style="display: none;">
-            <label for="usr">Tipo:</label>
-            <input type="text" class="form-control" id="usr">
+
+
+
+        <div class="container-fluid" style="display: none;">
+            <form>
+                <h2>Capacidade:</h2>
+                <select class="form-control" id="tipo1" name="sellist1">
+                    <option value="">Selecione</option>
+                    <option>4gb</option>
+                    <option>8gb</option>
+                    <option>16gb</option>
+                    <option>32gb</option>
+                    <option>120gb</option>
+                    <option>240gb</option>
+                    <option>512gb</option>
+                    <option>1tb</option>
+                </select>
+                <br>
+            </form>
         </div>
 
 
 
-
-        <form>
-            <h2>Capacidade:</h2>
-            <select class="form-control" id="tipo1" name="sellist1">
-                <option value="">Selecione</option>
-                <option>4gb</option>
-                <option>8gb</option>
-                <option>16gb</option>
-                <option>32gb</option>
-                <option>120gb</option>
-                <option>240gb</option>
-                <option>512gb</option>
-                <option>1tb</option>
-            </select>
-            <br>
-        </form>
-
         <form>
             <h2>Valor em R$ :</h2>
-            <input type="number" value="1000.00" min="0" step="1.10" data-number-to-fixed="2" data-number-stepfactor="100"
-                class="form-control currency" id="c2" />
+            <input type="number" value="1000.00" min="0" step="1.10" data-number-to-fixed="2"
+                data-number-stepfactor="100" class="form-control currency" id="c2" />
         </form>
 
         <form>
             <h2>Data de compra:</h2>
-            <input type="number" value=""   
-                class="form-control currency" id="c2" />
+            <input type="number" value="" class="form-control currency" id="c2" />
         </form>
+    </div>
     </div>
 
 
